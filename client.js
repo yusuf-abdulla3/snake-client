@@ -12,6 +12,54 @@ const connect = () => {
     console.log("Successfully connected to game server")
     conn.write('Name: YA3');
   })
+  // conn.on("connect", (data) => {
+  //   setTimeout(() => {
+  //     conn.write("Move: down");
+  //   }, 50 ) 
+  // })
+
+  // conn.on("connect", (data) => {
+  //   setTimeout(() => {
+  //     conn.write("Move: down");
+  //   }, 100 ) 
+  // })
+
+  // conn.on("connect", (data) => {
+  //   setTimeout(() => {
+  //     conn.write("Move: down");
+  //   }, 150 ) 
+  // })
+
+  // conn.on("connect", (data) => {
+  //   setTimeout(() => {
+  //     conn.write("Move: left");
+  //   }, 200 ) 
+  // })
+
+  // conn.on("connect", (data) => {
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 250 ) 
+  // })
+
+  //   conn.on("connect", (data) => {
+  //     setTimeout(() => {
+  //       conn.write("Move: up");
+  //     }, 300 ) 
+  //   })
+
+  //   conn.on("connect", (data) => {
+  //     setTimeout(() => {
+  //       conn.write("Move: left");
+  //     }, 350 ) 
+  //   })
+  //   conn.on("connect", (data) => {
+  //     setInterval(() => {
+  //       conn.write("Move: down", 50)
+  //     })
+    // })
+    
+
   conn.on("data", (data) => {
     console.log(data)
   })
