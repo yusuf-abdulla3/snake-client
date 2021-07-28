@@ -12,6 +12,10 @@ const wasd = (key) => {
   else if (key === "d") connection.write("Move: right")
 };
 
+const specialMessage = (key) => {
+  if (key === "p") connection.write ("Say: yooooooo")
+}
+
 
 const setupInput = (conn) => {
   connection = conn;
@@ -23,6 +27,7 @@ const setupInput = (conn) => {
  
   stdin.on("data", handleUserInput); 
   stdin.on("data", wasd); 
+  stdin.on("data", specialMessage); 
     
 }
 
